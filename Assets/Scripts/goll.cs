@@ -4,7 +4,7 @@ public class goll : MonoBehaviour
 {
     public GameObject ballPrefab; // ボールのプレハブ
     public Transform spawnPoint;  // ボールを生成する位置
-
+    
     void Start()
     {
         // 初期化処理があればここに書きます
@@ -20,8 +20,15 @@ public class goll : MonoBehaviour
         // 衝突したオブジェクトの名前が "left_goal" の場合
         if (collision.gameObject.name == "central_ball")
         {
-            Destroy(collision.gameObject); // 衝突したボールを破棄
-            SpawnBall(); // 新しいボールを spawnPoint の位置に生成
+
+
+           
+
+
+
+
+            ///Destroy(collision.gameObject); // 衝突したボールを破棄
+           /// SpawnBall(); // 新しいボールを spawnPoint の位置に生成
         }
     }
 
