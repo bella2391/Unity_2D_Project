@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour
         float moveX = Input.GetAxis(horizontalInputAxis);
         float moveY = Input.GetAxis(verticalInputAxis);
 
-        Vector2 movement = new Vector2(moveX, moveY) * moveSpeed;
+        Vector2 movement = new Vector2(moveX, moveY) * moveSpeed*3;
         rb.velocity = movement;
     }
 }
