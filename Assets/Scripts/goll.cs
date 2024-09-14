@@ -21,8 +21,8 @@ public class goll : MonoBehaviour
         if (collision.gameObject.name == "left_goal") {
 
             Destroy(this.gameObject);
-        
-        
+            Change
+        　
         
         }
     }
