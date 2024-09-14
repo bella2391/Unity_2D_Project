@@ -18,20 +18,10 @@ public class goll : MonoBehaviour
         // 衝突したオブジェクトの名前が "central_ball" の場合
         if (collision.gameObject.name == "central_ball")
         {
-<<<<<<< HEAD:Assets/Scripts/goll.cs
-
-
-           
-
-
-
-
             ///Destroy(collision.gameObject); // 衝突したボールを破棄
            /// SpawnBall(); // 新しいボールを spawnPoint の位置に生成
-=======
             Destroy(collision.gameObject); // 衝突したボールを破棄
             StartCoroutine(SpawnBallAfterDelay(0.1f)); // 少し遅れてボールを生成
->>>>>>> 99fe2409d82c6c3d42d9b4d8842bc4413934c4d4:Assets/Scripts/Bye/goll2.cs
         }
     }
 
