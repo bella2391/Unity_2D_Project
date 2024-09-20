@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ball : MonoBehaviour
 {
-    public Transform spawnPoint;  // ボールを生成する位置
+    public Transform spawnPoint;  // ボールを生成する位置?
     private Rigidbody2D rb;
     // Start is called before the first frame update
     void Start()
