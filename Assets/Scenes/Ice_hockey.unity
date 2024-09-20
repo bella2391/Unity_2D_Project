@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 188659233}
   - component: {fileID: 188659232}
   m_Layer: 0
-  m_Name: Static Sprite (1)
+  m_Name: bar_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -294,7 +294,7 @@ GameObject:
   - component: {fileID: 205690794}
   - component: {fileID: 205690799}
   m_Layer: 9
-  m_Name: central_ball
+  m_Name: ball_central
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -454,7 +454,7 @@ GameObject:
   - component: {fileID: 367020528}
   - component: {fileID: 367020530}
   m_Layer: 0
-  m_Name: table_square
+  m_Name: table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -887,7 +887,7 @@ GameObject:
   - component: {fileID: 604455295}
   - component: {fileID: 604455297}
   m_Layer: 0
-  m_Name: right_goal
+  m_Name: goal_right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1019,7 +1019,7 @@ GameObject:
   - component: {fileID: 716108064}
   - component: {fileID: 716108068}
   m_Layer: 10
-  m_Name: Static Sprite (4)
+  m_Name: boundary
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1176,12 +1176,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bb38eb7680ef99a588798d1596d52c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerBallLayer:
-    serializedVersion: 2
-    m_Bits: 256
-  centerBallLayer:
-    serializedVersion: 2
-    m_Bits: 512
 --- !u!1 &717592952
 GameObject:
   m_ObjectHideFlags: 0
@@ -1195,7 +1189,7 @@ GameObject:
   - component: {fileID: 717592954}
   - component: {fileID: 717592953}
   m_Layer: 0
-  m_Name: Static Sprite (2)
+  m_Name: bar_right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1353,7 +1347,7 @@ GameObject:
   - component: {fileID: 726337075}
   - component: {fileID: 726337074}
   m_Layer: 0
-  m_Name: Static Sprite (3)
+  m_Name: bar_under
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1511,7 +1505,7 @@ GameObject:
   - component: {fileID: 839743969}
   - component: {fileID: 839743968}
   m_Layer: 8
-  m_Name: left_circle (1)
+  m_Name: ball_right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1658,7 +1652,7 @@ GameObject:
   - component: {fileID: 1094995723}
   - component: {fileID: 1094995725}
   m_Layer: 0
-  m_Name: left_goal
+  m_Name: goal_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1790,7 +1784,7 @@ GameObject:
   - component: {fileID: 1096215642}
   - component: {fileID: 1096215643}
   m_Layer: 8
-  m_Name: left_circle
+  m_Name: ball_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1953,7 +1947,7 @@ GameObject:
   - component: {fileID: 1463792795}
   - component: {fileID: 1463792794}
   m_Layer: 0
-  m_Name: Static Sprite
+  m_Name: bar_above
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
