@@ -293,7 +293,7 @@ GameObject:
   - component: {fileID: 205690795}
   - component: {fileID: 205690794}
   - component: {fileID: 205690793}
-  - component: {fileID: 205690798}
+  - component: {fileID: 205690799}
   m_Layer: 0
   m_Name: central_ball
   m_TagString: Untagged
@@ -465,20 +465,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &205690798
+--- !u!114 &205690799
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 205690792}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 520e67587a6aec843a935d56a49b7416, type: 3}
+  m_Script: {fileID: 11500000, guid: 1807c1e01b2568244bd78d8c6f0fa44c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ballPrefab: {fileID: 0}
-  spawnPoint: {fileID: 0}
+  spawnPoint: {fileID: 448514842}
 --- !u!1 &367020527
 GameObject:
   m_ObjectHideFlags: 0
@@ -489,6 +488,7 @@ GameObject:
   m_Component:
   - component: {fileID: 367020529}
   - component: {fileID: 367020528}
+  - component: {fileID: 367020530}
   m_Layer: 0
   m_Name: table_square
   m_TagString: Untagged
@@ -563,6 +563,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &367020530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367020527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1807c1e01b2568244bd78d8c6f0fa44c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoint: {fileID: 0}
 --- !u!1 &444765264
 GameObject:
   m_ObjectHideFlags: 0
@@ -724,7 +737,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 8.741145
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1358,7 +1371,6 @@ GameObject:
   - component: {fileID: 1094995724}
   - component: {fileID: 1094995723}
   - component: {fileID: 1094995725}
-  - component: {fileID: 1094995726}
   m_Layer: 0
   m_Name: left_goal
   m_TagString: Untagged
@@ -1478,20 +1490,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1094995726
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1094995722}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 520e67587a6aec843a935d56a49b7416, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ballPrefab: {fileID: 205690792}
-  spawnPoint: {fileID: 448514842}
 --- !u!1 &1096215638
 GameObject:
   m_ObjectHideFlags: 0

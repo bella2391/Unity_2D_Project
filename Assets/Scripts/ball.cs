@@ -31,21 +31,5 @@ public class ball : MonoBehaviour
             rb.velocity = movement;
 
         }
-
-
-
-
-
-
-
-
-
-
     }
-
-
-
-
-
-
 }
