@@ -18,16 +18,16 @@ public class boundary : MonoBehaviour {
         Debug.Log("Boundary Layer ID: " + boundaryLayerID);
 
         // 最初だけレイヤー間の衝突判定を無効化
-        Physics2D.IgnoreLayerCollision(playerBallLayerID, boundaryLayerID, true);
+        Physics2D.IgnoreLayerCollision(playerBallLayerID, boundaryLayerID, false);
         Physics2D.IgnoreLayerCollision(centerBallLayerID, boundaryLayerID, true);
         // 衝突判定を無効化するコルーチンを開始
         // StartCoroutine(DisableCollisionInitially());
 
         //firstCollided = false;
     }
-
+    
     // Update is called once per frame
-    void Update() {
+    void Update() { 
         
     }
 
@@ -43,15 +43,15 @@ public class boundary : MonoBehaviour {
 
         int collidedLayer = collision.gameObject.layer;
 
-        if (collidedLayer == playerBallLayerID && !firstCollided) {
+        /*if (collidedLayer == playerBallLayerID && !firstCollided) {
             firstCollided = true; // 初衝突のフラグをtrueにセット
             Debug.Log("プレイヤーボールが真ん中のボールに触れました。衝突判定を有効化します。");
 
             // 真ん中のボールと境界線の衝突を有効化
             Physics2D.IgnoreLayerCollision(centerBallLayerID, boundaryLayerID, false);
-        }
+        }*/
 
-        if (collidedLayer == playerBallLayerID) {
+        /*if (collidedLayer == playerBallLayerID) {
             // プレイヤーのボールが境界線に衝突した場合、通過させない
             Debug.Log("Player ball hit the boundary!");
             // プレイヤーのボールと境界線は衝突するように設定
@@ -62,6 +62,6 @@ public class boundary : MonoBehaviour {
             Debug.Log("Center ball passed the boundary.");
             // 中央のボールと境界線は衝突しないように設定
             Physics2D.IgnoreLayerCollision(centerBallLayerID, boundaryLayerID, true);
-        }
+        }*/
     }
 }
