@@ -20,7 +20,18 @@ public class ball : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision) {
 
-        if (collision.gameObject.name == "left_goal")
+        if (collision.gameObject.name == "left_goal")///左にゴールしたとき
+        {
+
+
+
+            transform.position = spawnPoint.position;///位置を０００に変更
+
+            Vector2 movement = new Vector2(0, 0) ;
+            rb.velocity = movement;
+
+        }
+                if (collision.gameObject.name == "right_goal")///右にゴールしたとき
         {
 
 
