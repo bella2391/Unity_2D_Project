@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - boundary
+  - ball_central
+  - bar_bothsides
+  - playerball
+  - goal
   layers:
   - Default
   - TransparentFX
