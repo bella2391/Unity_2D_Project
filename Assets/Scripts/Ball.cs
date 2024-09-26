@@ -15,7 +15,7 @@ public class Ball : MonoBehaviour {
     }
 
     void Update() {
-        
+
     }
     private void OnCollisionEnter2D(Collision2D collision) {
 
@@ -24,7 +24,7 @@ public class Ball : MonoBehaviour {
         if (collisioner.CompareTag("playerball")) {
             Ball.firstTouch = true;
         }
-        
+
         if (Ball.firstTouch) {
             Debug.Log("0");
             if (collisioner.CompareTag("playerball")) {
@@ -41,7 +41,7 @@ public class Ball : MonoBehaviour {
 
             transform.position = spawnPoint.position;
 
-            Vector2 movement = new Vector2(0, 0) ;
+            Vector2 movement = new Vector2(0, 0);
             rb.velocity = movement;
         }
     }

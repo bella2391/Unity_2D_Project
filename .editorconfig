@@ -4,6 +4,7 @@ root = true
 # C# ファイル
 [*.cs]
 charset = utf-8
+csharp_new_line_before_open_brace = none
 # UTF-8(BOM付き)を利用したい場合は以下
 # charset = utf-8-bom
 
